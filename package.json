@@ -1,0 +1,25 @@
+{
+  "name": "format.js",
+  "version": "1.0.0",
+  "description": "A simple library for data format.",
+  "main": "src/format.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dleitee/format.js.git"
+  },
+  "keywords": [
+    "format",
+    "data",
+    "format.js",
+    "formating"
+  ],
+  "author": "Daniel Leite de Oliveira (dleitee@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dleitee/format.js/issues"
+  },
+  "homepage": "https://github.com/dleitee/format.js#readme"
+}
