@@ -1,6 +1,6 @@
 /**
 *
-* Gulpfile for validate.js
+* Gulpfile for format.js
 *
 * @author Daniel Leite de Oliveira <dleitee@gmail.com>
 *
