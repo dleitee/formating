@@ -91,4 +91,32 @@ describe('Functions Util', () => {
       })
     })
   })
+
+  describe('#lowerCase(value)', () => {
+    it('should match áéíóúaeiou', () => {
+      let result = format(util.lowerCase)
+      let fixtures = [
+        'ÁÉÍÓÚAEIOU',
+        'áÉíÓúAeIoU'
+      ]
+
+      fixtures.forEach(el => {
+        expect(result(el)).to.equal('áéíóúaeiou')
+      })
+    })
+  })
+
+  describe('#upperCase(value)', () => {
+    it('should match ÁÉÍÓÚAEIOU', () => {
+      let result = format(util.upperCase)
+      let fixtures = [
+        'áéíóúaeiou',
+        'áÉíÓúAeIoU'
+      ]
+
+      fixtures.forEach(el => {
+        expect(result(el)).to.equal('ÁÉÍÓÚAEIOU')
+      })
+    })
+  })
 })

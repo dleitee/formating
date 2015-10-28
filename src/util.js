@@ -26,10 +26,30 @@ function trim(value) {
 }
 
 /*
+ * Transform to lowercase
+ * @params value
+ * @return string
+ */
+function lowerCase(value) {
+  return value.toLowerCase()
+}
+
+/*
+ * Transform to UPPERCASE
+ * @params value
+ * @return string
+ */
+function upperCase(value) {
+  return value.toUpperCase()
+}
+
+/*
  * Export constant util
  */
 export const util = {
   ltrim: ltrim,
   rtrim: rtrim,
-  trim: trim
+  trim: trim,
+  lowerCase: lowerCase,
+  upperCase: upperCase
 }

@@ -43,4 +43,30 @@ let result = toFormat('  data  ')
 // result => 'data'
 ```
 
+## lowerCase
+
+Transform to lowercase
+
+#### Usage
+```es6
+import {format, util} from 'formating'
+
+let toFormat = format(util.lowerCase)
+let result = toFormat('DATA')
+// result => 'data'
+```
+
+## upperCase
+
+Transform to UPPERCASE
+
+#### Usage
+```es6
+import {format, util} from 'formating'
+
+let toFormat = format(util.upperCase)
+let result = toFormat('data')
+// result => 'DATA'
+```
+
 .
