@@ -119,4 +119,25 @@ describe('Functions Util', () => {
       })
     })
   })
+
+  describe('#camelCase(value)', () => {
+    it('should match camelCase', () => {
+      let result = format(util.camelCase)
+      let fixtures = [
+        'CamelCase',
+        'camelCase',
+        'Camel case',
+        'Camel  case',
+        'camel Case',
+        'camel-case',
+        '-camel--case',
+        'camel_case',
+        '     camel_case'
+      ]
+
+      fixtures.forEach(el => {
+        expect(result(el)).to.equal('camelCase')
+      })
+    })
+  })
 })

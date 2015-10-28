@@ -66,6 +66,9 @@ Also available for [AMD](https://github.com/amdjs/amdjs-api/wiki/AMD)
     - [x] ltrim
     - [x] rtrim
     - [x] trim
+    - [x] lowerCase
+    - [x] upperCase
+    - [x] camelCase
 
 # LICENSE
 The MIT License (MIT)

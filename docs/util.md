@@ -69,4 +69,17 @@ let result = toFormat('data')
 // result => 'DATA'
 ```
 
+## camelCase
+
+Transform to camelCase
+
+#### Usage
+```es6
+import {format, util} from 'formating'
+
+let toFormat = format(util.camelCase)
+let result = toFormat('data format')
+// result => 'dataFormat'
+```
+
 .

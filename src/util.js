@@ -44,6 +44,17 @@ function upperCase(value) {
 }
 
 /*
+ * Transform to camelCase
+ * @params value
+ * @return string
+ */
+function camelCase(value) {
+  let string = value.replace(/[\-_\s]+(.)?/g,
+                              (match, chr) => chr ? chr.toUpperCase() : '')
+  return lowerCase(string.substr(0, 1)) + string.substr(1)
+}
+
+/*
  * Export constant util
  */
 export const util = {
@@ -51,5 +62,6 @@ export const util = {
   rtrim: rtrim,
   trim: trim,
   lowerCase: lowerCase,
-  upperCase: upperCase
+  upperCase: upperCase,
+  camelCase: camelCase
 }
