@@ -24,7 +24,7 @@ gulp.task('browserify', () => {
     // Generate a UMD bundle for the supplied export name.
     // This bundle works with other module systems and sets the name
     // given as a window global if no module system is found.
-    standalone: 'format.js',
+    standalone: 'formating',
 
     // Enable source maps that allow you to debug your files
     // separately.

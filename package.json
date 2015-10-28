@@ -1,8 +1,8 @@
 {
   "name": "formating",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A simple library for data format.",
-  "main": "src/format.js",
+  "main": "dist/format.js",
   "scripts": {
     "test": "xo && ./node_modules/mocha/bin/mocha --compilers js:babel/register"
   },
@@ -51,5 +51,6 @@
     "es-next": true,
     "space": true,
     "semicolon": false
-  }
+  },
+  "dependencies": {}
 }
