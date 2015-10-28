@@ -1,6 +1,6 @@
 {
   "name": "format.js",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "A simple library for data format.",
   "main": "src/format.js",
   "scripts": {
