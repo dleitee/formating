@@ -1,7 +1,7 @@
-# Util
+# String
 
 ```es6
-import {util} from 'formating'
+import {string} from 'formating'
 ```
 
 ## ltrim
@@ -10,9 +10,9 @@ Remove spaces left
 
 #### Usage
 ```es6
-import {format, util} from 'formating'
+import {format, string} from 'formating'
 
-let toFormat = format(util.ltrim)
+let toFormat = format(string.ltrim)
 let result = toFormat('  data')
 // result => 'data'
 ```
@@ -23,9 +23,9 @@ Remove spaces right
 
 #### Usage
 ```es6
-import {format, util} from 'formating'
+import {format, string} from 'formating'
 
-let toFormat = format(util.rtrim)
+let toFormat = format(string.rtrim)
 let result = toFormat('data  ')
 // result => 'data'
 ```
@@ -36,9 +36,9 @@ Remove the spaces left and right
 
 #### Usage
 ```es6
-import {format, util} from 'formating'
+import {format, string} from 'formating'
 
-let toFormat = format(util.trim)
+let toFormat = format(string.trim)
 let result = toFormat('  data  ')
 // result => 'data'
 ```
@@ -49,9 +49,9 @@ Transform to lowercase
 
 #### Usage
 ```es6
-import {format, util} from 'formating'
+import {format, string} from 'formating'
 
-let toFormat = format(util.lowerCase)
+let toFormat = format(string.lowerCase)
 let result = toFormat('DATA')
 // result => 'data'
 ```
@@ -62,9 +62,9 @@ Transform to UPPERCASE
 
 #### Usage
 ```es6
-import {format, util} from 'formating'
+import {format, string} from 'formating'
 
-let toFormat = format(util.upperCase)
+let toFormat = format(string.upperCase)
 let result = toFormat('data')
 // result => 'DATA'
 ```
@@ -75,9 +75,9 @@ Transform to camelCase
 
 #### Usage
 ```es6
-import {format, util} from 'formating'
+import {format, string} from 'formating'
 
-let toFormat = format(util.camelCase)
+let toFormat = format(string.camelCase)
 let result = toFormat('data format')
 // result => 'dataFormat'
 ```
@@ -88,9 +88,9 @@ Transform to snakeCase
 
 #### Usage
 ```es6
-import {format, util} from 'formating'
+import {format, string} from 'formating'
 
-let toFormat = format(util.snakeCase)
+let toFormat = format(string.snakeCase)
 let result = toFormat('data format')
 // result => 'data_format'
 ```
@@ -101,9 +101,9 @@ Transform to kebabCase
 
 #### Usage
 ```es6
-import {format, util} from 'formating'
+import {format, string} from 'formating'
 
-let toFormat = format(util.kebabCase)
+let toFormat = format(string.kebabCase)
 let result = toFormat('data format')
 // result => 'data-format'
 ```
@@ -114,9 +114,9 @@ Transform to studlyCaps
 
 #### Usage
 ```es6
-import {format, util} from 'formating'
+import {format, string} from 'formating'
 
-let toFormat = format(util.studlyCaps)
+let toFormat = format(string.studlyCaps)
 let result = toFormat('data format')
 // result => 'DataFormat'
 ```

@@ -15,9 +15,9 @@ npm install formating --save
 ### With ES6/import
 
 ```javascript
-import {format, util} from 'formating'
+import {format, string} from 'formating'
 
-let toFormat = format(util.trim)
+let toFormat = format(string.trim)
 let result = toFormat(' Test Formating ')
 // result => 'Test Formating'
 ```
@@ -27,9 +27,9 @@ let result = toFormat(' Test Formating ')
 ```javascript
 var formating = require('formating')
 var format = formating.format
-var util = formating.util
+var string = formating.string
 
-var toFormat = format(util.trim)
+var toFormat = format(string.trim)
 var result = toFormat(' Test Formating ')
 // result => 'Test Formating'
 ```
@@ -42,18 +42,18 @@ var result = toFormat(' Test Formating ')
 
 ```javascript
 var format = formating.format
-var util = format.util
+var string = format.string
 
-var toFormat = format(util.trim)
+var toFormat = format(string.trim)
 var result = toFormat(' Test Formating ')
 // result => 'Test Formating'
 ```
 OR
 ```javascript
 var format = window.formating.format
-var util = format.util
+var string = format.string
 
-var toFormat = format(util.trim)
+var toFormat = format(string.trim)
 var result = toFormat( 'Test Formating ')
 // result => 'Test Formating'
 ```
@@ -62,7 +62,7 @@ Also available for [AMD](https://github.com/amdjs/amdjs-api/wiki/AMD)
 
 # Formating Functions
 
-- [x] [Util](https://github.com/dleitee/formating/blob/master/docs/util.md)
+- [x] [String](https://github.com/dleitee/formating/blob/master/docs/string.md)
     - [x] ltrim
     - [x] rtrim
     - [x] trim

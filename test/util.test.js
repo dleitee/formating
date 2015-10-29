@@ -1,10 +1,10 @@
 import expect from 'expect.js'
-import {format, util} from '../src/format'
+import {format, string} from '../src/format'
 
-describe('Functions Util', () => {
+describe('Functions string', () => {
   describe('#ltrim(value)', () => {
     it('should match Test', () => {
-      let result = format(util.ltrim)
+      let result = format(string.ltrim)
       let fixtures = [
         'Test',
         ' Test',
@@ -18,7 +18,7 @@ describe('Functions Util', () => {
     })
 
     it('should match T est', () => {
-      let result = format(util.ltrim)
+      let result = format(string.ltrim)
       let fixtures = [
         'T est',
         ' T est',
@@ -34,7 +34,7 @@ describe('Functions Util', () => {
 
   describe('#rtrim(value)', () => {
     it('should match Test', () => {
-      let result = format(util.rtrim)
+      let result = format(string.rtrim)
       let fixtures = [
         'Test',
         'Test ',
@@ -48,7 +48,7 @@ describe('Functions Util', () => {
     })
 
     it('should match Tes t', () => {
-      let result = format(util.rtrim)
+      let result = format(string.rtrim)
       let fixtures = [
         'Tes t',
         'Tes t ',
@@ -64,7 +64,7 @@ describe('Functions Util', () => {
 
   describe('#trim(value)', () => {
     it('should match Test', () => {
-      let result = format(util.trim)
+      let result = format(string.trim)
       let fixtures = [
         'Test',
         ' Test ',
@@ -78,7 +78,7 @@ describe('Functions Util', () => {
     })
 
     it('should match T es t', () => {
-      let result = format(util.trim)
+      let result = format(string.trim)
       let fixtures = [
         'T es t',
         ' T es t ',
@@ -94,7 +94,7 @@ describe('Functions Util', () => {
 
   describe('#lowerCase(value)', () => {
     it('should match áéíóúaeiou', () => {
-      let result = format(util.lowerCase)
+      let result = format(string.lowerCase)
       let fixtures = [
         'ÁÉÍÓÚAEIOU',
         'áÉíÓúAeIoU'
@@ -108,7 +108,7 @@ describe('Functions Util', () => {
 
   describe('#upperCase(value)', () => {
     it('should match ÁÉÍÓÚAEIOU', () => {
-      let result = format(util.upperCase)
+      let result = format(string.upperCase)
       let fixtures = [
         'áéíóúaeiou',
         'áÉíÓúAeIoU'
@@ -122,7 +122,7 @@ describe('Functions Util', () => {
 
   describe('#camelCase(value)', () => {
     it('should match camelCase', () => {
-      let result = format(util.camelCase)
+      let result = format(string.camelCase)
       let fixtures = [
         'CamelCase',
         'camelCase',
@@ -143,7 +143,7 @@ describe('Functions Util', () => {
 
   describe('#snakeCase(value)', () => {
     it('should match de_camelize', () => {
-      let result = format(util.snakeCase)
+      let result = format(string.snakeCase)
       let fixtures = [
         'deCamelize',
         'de-Camelize',
@@ -164,7 +164,7 @@ describe('Functions Util', () => {
 
   describe('#kebabCase(value)', () => {
     it('should match de-camelize', () => {
-      let result = format(util.kebabCase)
+      let result = format(string.kebabCase)
       let fixtures = [
         'deCamelize',
         'de-Camelize',
@@ -185,7 +185,7 @@ describe('Functions Util', () => {
 
   describe('#studlyCaps(value)', () => {
     it('should match DeCamelize', () => {
-      let result = format(util.studlyCaps)
+      let result = format(string.studlyCaps)
       let fixtures = [
         'deCamelize',
         'de-Camelize',

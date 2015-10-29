@@ -94,9 +94,9 @@ function kebabCase(value) {
 }
 
 /*
- * Export constant util
+ * Export constant string
  */
-export const util = {
+export const string = {
   ltrim: ltrim,
   rtrim: rtrim,
   trim: trim,

@@ -1,15 +1,15 @@
 import expect from 'expect.js'
-import {format, util} from '../src/format'
+import {format, string} from '../src/format'
 
 describe('Library Validate', () => {
   describe('#format(...fn)(value)', () => {
     it('must accept more than one parameter', () => {
-      let result = format(util.ltrim, util.rtrim)
+      let result = format(string.ltrim, string.rtrim)
       expect(result(' Test ')).to.equal('Test')
     })
 
     it('must accept only one parameter', () => {
-      let result = format(util.ltrim)
+      let result = format(string.ltrim)
       expect(result(' Test')).to.equal('Test')
     })
 

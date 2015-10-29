@@ -1,7 +1,7 @@
 import {isNil} from './lib/isnil.js'
 import {reduce} from './lib/reduce.js'
 
-export * from './util.js'
+export * from './string.js'
 
 export const format =
   (...fn) =>

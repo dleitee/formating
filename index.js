@@ -1,8 +1,8 @@
 
 var formating = require('formating')
 var format = formating.format
-var util = formating.util
+var string = formating.string
 
-var toFormat = format(util.trim)
+var toFormat = format(string.trim)
 var result = toFormat(' Test Formating ')
 console.log(result)
