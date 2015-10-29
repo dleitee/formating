@@ -82,4 +82,43 @@ let result = toFormat('data format')
 // result => 'dataFormat'
 ```
 
+## snakeCase
+
+Transform to snakeCase
+
+#### Usage
+```es6
+import {format, util} from 'formating'
+
+let toFormat = format(util.snakeCase)
+let result = toFormat('data format')
+// result => 'data_format'
+```
+
+## kebabCase
+
+Transform to kebabCase
+
+#### Usage
+```es6
+import {format, util} from 'formating'
+
+let toFormat = format(util.kebabCase)
+let result = toFormat('data format')
+// result => 'data-format'
+```
+
+## studlyCaps
+
+Transform to studlyCaps
+
+#### Usage
+```es6
+import {format, util} from 'formating'
+
+let toFormat = format(util.studlyCaps)
+let result = toFormat('data format')
+// result => 'DataFormat'
+```
+
 .

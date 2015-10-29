@@ -69,6 +69,9 @@ Also available for [AMD](https://github.com/amdjs/amdjs-api/wiki/AMD)
     - [x] lowerCase
     - [x] upperCase
     - [x] camelCase
+    - [x] snakeCase
+    - [x] kebabCase
+    - [x] studlyCaps
 
 # LICENSE
 The MIT License (MIT)

@@ -44,14 +44,53 @@ function upperCase(value) {
 }
 
 /*
+ * Transform to StudlyCaps
+ * @params value
+ * @return string
+ */
+function studlyCaps(value) {
+  let string = value.replace(/[\-_\s]+(.)?/g,
+                             (match, chr) => chr ? chr.toUpperCase() : '')
+  return upperCase(string.substr(0, 1)) + string.substr(1)
+}
+
+/*
  * Transform to camelCase
  * @params value
  * @return string
  */
 function camelCase(value) {
-  let string = value.replace(/[\-_\s]+(.)?/g,
-                              (match, chr) => chr ? chr.toUpperCase() : '')
+  let string = studlyCaps(value)
   return lowerCase(string.substr(0, 1)) + string.substr(1)
+}
+
+/*
+ * Decamelize String
+ * @params value
+ * @return string
+ */
+function decamelize(value, chr = '_') {
+  let camel = camelCase(value)
+  let string = camel.replace(/([A-Z])+/g, chr + '$1')
+  return string.toLowerCase()
+}
+
+/*
+ * Decamelize snake_case
+ * @params value
+ * @return string
+ */
+function snakeCase(value) {
+  return decamelize(value, '_')
+}
+
+/*
+ * Decamelize kebab-case
+ * @params value
+ * @return string
+ */
+function kebabCase(value) {
+  return decamelize(value, '-')
 }
 
 /*
@@ -63,5 +102,8 @@ export const util = {
   trim: trim,
   lowerCase: lowerCase,
   upperCase: upperCase,
-  camelCase: camelCase
+  camelCase: camelCase,
+  snakeCase: snakeCase,
+  kebabCase: kebabCase,
+  studlyCaps: studlyCaps
 }

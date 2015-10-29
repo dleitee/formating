@@ -140,4 +140,67 @@ describe('Functions Util', () => {
       })
     })
   })
+
+  describe('#snakeCase(value)', () => {
+    it('should match de_camelize', () => {
+      let result = format(util.snakeCase)
+      let fixtures = [
+        'deCamelize',
+        'de-Camelize',
+        'de camelize',
+        'de  camelize',
+        'de Camelize',
+        'de-camelize',
+        '-de--camelize',
+        'de_camelize',
+        '     de_camelize'
+      ]
+
+      fixtures.forEach(el => {
+        expect(result(el)).to.equal('de_camelize')
+      })
+    })
+  })
+
+  describe('#kebabCase(value)', () => {
+    it('should match de-camelize', () => {
+      let result = format(util.kebabCase)
+      let fixtures = [
+        'deCamelize',
+        'de-Camelize',
+        'de camelize',
+        'de  camelize',
+        'de Camelize',
+        'de-camelize',
+        '-de--camelize',
+        'de_camelize',
+        '     de_camelize'
+      ]
+
+      fixtures.forEach(el => {
+        expect(result(el)).to.equal('de-camelize')
+      })
+    })
+  })
+
+  describe('#studlyCaps(value)', () => {
+    it('should match DeCamelize', () => {
+      let result = format(util.studlyCaps)
+      let fixtures = [
+        'deCamelize',
+        'de-Camelize',
+        'de camelize',
+        'de  camelize',
+        'de Camelize',
+        'de-camelize',
+        '-de--camelize',
+        'de_camelize',
+        '     de_camelize'
+      ]
+
+      fixtures.forEach(el => {
+        expect(result(el)).to.equal('DeCamelize')
+      })
+    })
+  })
 })
