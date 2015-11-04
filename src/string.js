@@ -94,6 +94,19 @@ function kebabCase(value) {
 }
 
 /*
+ * Transform string to date
+ * @params value
+ * @return date
+ */
+function toDate(value) {
+  return format => {
+    if (value) {
+      value = format
+    }
+    return new Date(2015, 7, 15)
+  }
+}
+/*
  * Export constant string
  */
 export const string = {
@@ -105,5 +118,6 @@ export const string = {
   camelCase: camelCase,
   snakeCase: snakeCase,
   kebabCase: kebabCase,
-  studlyCaps: studlyCaps
+  studlyCaps: studlyCaps,
+  toDate: toDate
 }

@@ -1,5 +1,11 @@
-import expect from 'expect.js'
+// import expect from 'expect.js'
+import chai from 'chai'
+import datetime from 'chai-datetime'
 import {format, string} from '../src/format'
+
+var expect = chai.expect
+
+chai.use(datetime)
 
 describe('Functions string', () => {
   describe('#ltrim(value)', () => {
@@ -200,6 +206,18 @@ describe('Functions string', () => {
 
       fixtures.forEach(el => {
         expect(result(el)).to.equal('DeCamelize')
+      })
+    })
+  })
+
+  describe('#toDate(value)', () => {
+    it('should match new Date(2015, 07, 15)', () => {
+      let fixtures = [
+        {date: '15/08/2015', format: 'DD/MM/YYYY'}
+      ]
+      fixtures.forEach(el => {
+        let result = format(string.toDate(el.format))
+        expect(result(el.date)).to.equalDate(new Date(2015, 7, 15))
       })
     })
   })

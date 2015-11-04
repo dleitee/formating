@@ -4,7 +4,11 @@
   "description": "A simple library for data format.",
   "main": "dist/format.js",
   "scripts": {
-    "test": "xo && ./node_modules/mocha/bin/mocha --compilers js:babel/register"
+    "test": "npm run test-xo && npm run test-mocha && npm run test-snyk",
+    "test-xo": "xo",
+    "test-mocha": "./node_modules/mocha/bin/mocha --compilers js:babel/register",
+    "test-snyk": "snyk test"
+
   },
   "repository": {
     "type": "git",
