@@ -1,4 +1,7 @@
 # formating
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/dleitee/formating.svg)](https://greenkeeper.io/)
+
 A simple library for data format
 
 **Is under development**
